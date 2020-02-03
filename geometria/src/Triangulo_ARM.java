@@ -22,8 +22,4 @@ public class Triangulo_ARM extends FiguraGeometrica_ARM {
 		sp = this.semiPerimetro();
 		return Math.sqrt(sp * (sp-a) * (sp-b) * (sp-c));
 	}
-	
-	public double semiPerimetro() {
-		return this.perimetro() / 2;
-	}
 }
