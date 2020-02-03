@@ -6,6 +6,9 @@ public class Circulo_ARM extends FiguraGeometrica_ARM {
 	
 	public Circulo_ARM(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r < 0) {
+			r=r*(-1);
+		}
 		radio = r;
 	}
 
