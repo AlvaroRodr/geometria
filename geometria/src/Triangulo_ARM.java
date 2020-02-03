@@ -19,11 +19,7 @@ public class Triangulo_ARM extends FiguraGeometrica_ARM {
 	@Override
 	public double area() { //Utiliza la formula de Her�n
 		double sp;
-		sp = this.semiPerimetro();
+		sp = this.perimetro() / 2;
 		return Math.sqrt(sp * (sp-a) * (sp-b) * (sp-c));
-	}
-	
-	public double semiPerimetro() {
-		return this.perimetro() / 2;
 	}
 }
